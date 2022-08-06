@@ -1,0 +1,40 @@
+.green {
+    background: var(--gradient-green);
+}
+
+.red {
+    background: var(--gradient-red);
+}
+
+.yellow {
+    background: var(--gradient-yellow);
+}
+
+.blue {
+    background: var(--gradient-blue);
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.non-clickable {
+    cursor: default !important;
+}
+.non-clickable:focus,
+.non-clickable:active {
+    opacity: 1 !important;
+    scale: 1 !important;
+}

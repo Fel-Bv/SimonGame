@@ -1,0 +1,129 @@
+@import url('./damavand-font.css');
+@import url('./shorts.css');
+
+:root {
+    --gradient-green: linear-gradient(#8cd14b, #72b439);
+    --gradient-red: linear-gradient(#e93923, #bb271a);
+    --gradient-yellow: linear-gradient(#fced7a,  #f3af48);
+    --gradient-blue: linear-gradient(#5c97ef, #3361ca);
+    --black: #090908;
+    --gray: #cccccc;
+}
+
+* {
+    user-select: none;
+    cursor: default;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+#container {
+    font-family: 'Damavand Regular';
+    position: relative;
+    height: 360px;
+    width: 360px;
+}
+
+.circle {
+    border: 8px solid var(--black);
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+}
+
+.counter-container {
+    background: var(--black);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 240px;
+    width: 240px;
+    margin: 60px;
+}
+
+.counter-container .btns {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10%;
+    height: 35px;
+    width: 100%;
+    gap: 3px;
+}
+
+.counter-container .btns > * {
+    background-color: var(--gray);
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    height: 90%;
+}
+
+.counter-container .btns .timer,
+.counter-container .btns .round {
+    opacity: .95;
+    width: 40px;
+}
+
+.counter-container .btns .start-btn {
+    cursor: pointer;
+    width: 80px;
+}
+
+.counter-container .start-btn:focus,
+.counter-container .start-btn:active,
+.circle:focus,
+.circle:active,
+.clicked {
+    opacity: .8;
+    scale: .98;
+}
+
+.flash-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 15px;
+    width: 100%;
+}
+
+.flash {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+#round-img {
+    position: fixed;
+    display: none;
+    margin: auto;
+    height: 0;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+#round-img.show {
+    display: initial;
+    height: 300px;
+    width: 300px;
+}
