@@ -32,7 +32,7 @@ function setRightImage() {
         $round_img.src = '';
     }, 500);
     $round_img.classList.toggle('show');
-    $round_img.src = '/static/img/right.png';
+    $round_img.src = './../img/right.png';
 }
 
 function setWrongImage() {
@@ -41,7 +41,7 @@ function setWrongImage() {
         $round_img.src = '';
     }, 500);
     $round_img.classList.toggle('show');
-    $round_img.src = '/static/img/wrong.png';
+    $round_img.src = './../img/wrong.png';
 }
 
 function setCirclesClickable() {
